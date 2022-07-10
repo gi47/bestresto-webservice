@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bestresto.springboot.web.HelloResponseDTOTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-10T09:59:51" hostname="DESKTOP-SF3NOPP" time="0.003">
+  <properties/>
+  <testcase name="lombok_functioning_T()" classname="com.bestresto.springboot.web.HelloResponseDTOTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

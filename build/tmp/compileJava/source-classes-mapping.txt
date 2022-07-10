@@ -25,8 +25,8 @@ com/bestresto/springboot/domain/user/Role.java
  com.bestresto.springboot.domain.user.Role
 com/bestresto/springboot/domain/BaseTimeEntity.java
  com.bestresto.springboot.domain.BaseTimeEntity
-com/bestresto/springboot/Application.java
- com.bestresto.springboot.Application
+com/bestresto/springboot/config/WebConfig.java
+ com.bestresto.springboot.config.WebConfig
 com/bestresto/springboot/domain/user/User.java
  com.bestresto.springboot.domain.user.User
  com.bestresto.springboot.domain.user.User$UserBuilder
@@ -47,5 +47,7 @@ com/bestresto/springboot/config/auth/LoginUser.java
  com.bestresto.springboot.config.auth.LoginUser
 com/bestresto/springboot/web/IndexController.java
  com.bestresto.springboot.web.IndexController
-com/bestresto/springboot/config/WebConfig.java
- com.bestresto.springboot.config.WebConfig
+com/bestresto/springboot/Application.java
+ com.bestresto.springboot.Application
+com/bestresto/springboot/config/JpaConfig.java
+ com.bestresto.springboot.config.JpaConfig

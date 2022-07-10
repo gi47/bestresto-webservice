@@ -1,0 +1,10 @@
+com/bestresto/springboot/web/HelloResponseDTOTest.java
+ com.bestresto.springboot.web.HelloResponseDTOTest
+com/bestresto/springboot/web/PostsApiControllerTest.java
+ com.bestresto.springboot.web.PostsApiControllerTest
+com/bestresto/springboot/web/IndexControllerTest.java
+ com.bestresto.springboot.web.IndexControllerTest
+com/bestresto/springboot/domain/PostsRepositoryTest.java
+ com.bestresto.springboot.domain.PostsRepositoryTest
+com/bestresto/springboot/web/HelloControllerTest.java
+ com.bestresto.springboot.web.HelloControllerTest
