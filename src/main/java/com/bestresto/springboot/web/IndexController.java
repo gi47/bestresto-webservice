@@ -1,5 +1,7 @@
 package com.bestresto.springboot.web;
 
+import com.bestresto.springboot.config.auth.LoginUser;
+import com.bestresto.springboot.config.auth.dto.SessionUser;
 import com.bestresto.springboot.service.PostsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -7,11 +9,14 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
+import javax.servlet.http.HttpSession;
+
 @RequiredArgsConstructor
 @Controller	// {1}
 public class IndexController {
 
     private final PostsService postsService;
+    //private final HttpSession httpSession;
 
     @GetMapping("/posts/save")
     public String postsSave() {
@@ -20,9 +25,16 @@ public class IndexController {
 
 
     @GetMapping("/")
-    public String index(Model model) {
-        model.addAttribute("posts", postsService.findAllDesc()); //postsService.findAllDesc()의 결과 >> "posts"
-        return "index"; //index.mustache에 전달
+    public String index(Model model, @LoginUser SessionUser user) {
+        model.addAttribute("posts", postsService.findAllDesc());
+
+        // SessionUser user = (SessionUser) httpSession.getAttribute("user");
+
+        if(user != null){
+            model.addAttribute("userName", user.getName());
+        }
+
+        return "index";
     }
 
     @GetMapping("/posts/update/{id}")
@@ -32,4 +44,6 @@ public class IndexController {
 
         return "posts-update";
     }
+
+
 }
