@@ -50,4 +50,4 @@ script: "./gradlew clean build" # master 브랜치에 푸시되었을 떄 수행
 notifications:
   email:
     recipients:
-      - jojoldu@gmail.com
+      - kji306301@gmail.com
